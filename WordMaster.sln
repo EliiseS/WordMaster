@@ -3,8 +3,61 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Presentation Layer", "10 Presentation Layer", "{7A43B3D6-A256-4095-B770-18FF9D1B4C77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20 Business Layer", "20 Business Layer", "{3F252282-5D89-4CDC-B568-24E65BFC1457}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 Domain Layer", "30 Domain Layer", "{D5FEB480-0C8D-40E0-89B2-04E949A7EDF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40 Data Layer", "40 Data Layer", "{45CC04E9-15F7-4B84-858D-DFFF997A8B15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50 Cross Cutting Layer", "50 Cross Cutting Layer", "{4A2FAF22-71ED-48A3-A127-65F874A2035B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordMaster", "WordMaster\WordMaster.csproj", "{19CD842A-FE6F-47A3-8B77-180BFF79CDEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordMaster.Business", "WordMaster.Business\WordMaster.Business.csproj", "{CEB0E3E1-A4F9-458A-A83D-B51DFA53C39E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordMaster.Domain", "WordMaster.Domain\WordMaster.Domain.csproj", "{E20A1E1D-F7BB-4837-903B-14167B63AF29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordMaster.Data", "WordMaster.Data\WordMaster.Data.csproj", "{ACBDE18E-6738-4197-822E-043131AFB900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordMaster.CrossCutting.TestHelpers", "WordMaster.CrossCutting.TestHelpers\WordMaster.CrossCutting.TestHelpers.csproj", "{26AB03B8-0AA9-4C15-B071-8A3B3D667F59}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19CD842A-FE6F-47A3-8B77-180BFF79CDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CD842A-FE6F-47A3-8B77-180BFF79CDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CD842A-FE6F-47A3-8B77-180BFF79CDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CD842A-FE6F-47A3-8B77-180BFF79CDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB0E3E1-A4F9-458A-A83D-B51DFA53C39E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB0E3E1-A4F9-458A-A83D-B51DFA53C39E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB0E3E1-A4F9-458A-A83D-B51DFA53C39E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB0E3E1-A4F9-458A-A83D-B51DFA53C39E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20A1E1D-F7BB-4837-903B-14167B63AF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20A1E1D-F7BB-4837-903B-14167B63AF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20A1E1D-F7BB-4837-903B-14167B63AF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20A1E1D-F7BB-4837-903B-14167B63AF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACBDE18E-6738-4197-822E-043131AFB900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACBDE18E-6738-4197-822E-043131AFB900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACBDE18E-6738-4197-822E-043131AFB900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACBDE18E-6738-4197-822E-043131AFB900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26AB03B8-0AA9-4C15-B071-8A3B3D667F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26AB03B8-0AA9-4C15-B071-8A3B3D667F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26AB03B8-0AA9-4C15-B071-8A3B3D667F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26AB03B8-0AA9-4C15-B071-8A3B3D667F59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19CD842A-FE6F-47A3-8B77-180BFF79CDEF} = {7A43B3D6-A256-4095-B770-18FF9D1B4C77}
+		{CEB0E3E1-A4F9-458A-A83D-B51DFA53C39E} = {3F252282-5D89-4CDC-B568-24E65BFC1457}
+		{E20A1E1D-F7BB-4837-903B-14167B63AF29} = {D5FEB480-0C8D-40E0-89B2-04E949A7EDF7}
+		{ACBDE18E-6738-4197-822E-043131AFB900} = {45CC04E9-15F7-4B84-858D-DFFF997A8B15}
+		{26AB03B8-0AA9-4C15-B071-8A3B3D667F59} = {4A2FAF22-71ED-48A3-A127-65F874A2035B}
 	EndGlobalSection
 EndGlobal
